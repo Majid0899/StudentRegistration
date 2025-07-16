@@ -35,7 +35,7 @@ I   D, Roll No, Contact: Must be numeric
 
 #Run the Project
 1.Clone the Repisitory
-    git clone https://github.com/your-username/student-registration-system.git
+    git clone https://github.com/Majid0899/StudentRegistration.git
 2.Navigate to directory
     cd student-registration-system
 3.open app

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Spicy+Rice&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+/* Heading */
+
+header h1 {
+  text-align: center;
+  margin: 8px;
+  color: rgba(82, 52, 212, 0.863);
+  font-family: Protest Revolution;
+  font-size: 2.5rem;
+}
+
+header h1:hover {
+  animation-name: bounce-scale;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Student main Content */
+#studentContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+
+/* Student Form */
+#student-form {
+  margin-bottom: 14px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+
+.stuLabel {
+  color: rgb(95, 87, 199);
+  margin-top: 8px;
+  margin-left: 8px;
+  font-family: Rowdies;
+}
+.studentInput {
+  margin: 4px 8px;
+  padding: 6px 4px;
+  width: 60vw;
+  border: none;
+  border-radius: 8px;
+  transition-property: border;
+  transition-duration: 5s;
+  outline: none;
+  transition-timing-function: ease-in-out;
+}
+
+.studentInput:hover {
+  box-shadow: 0px 2px 14px 2px hsla(219, 94%, 57%, 0.774);
+}
+
+#submitBtn {
+ display: block;
+  margin: 10px auto;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(82, 52, 212, 0.8);
+  color: white;
+  font-family: Rowdies;
+  cursor: pointer;
+}
+
+/* Student details  */
+#student-details{
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: rgb(194, 217, 238);
+  width: 90vw;
+}
+
+.student-header,
+.student-row {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 4px;
+  padding: 4px;
+  
+}
+
+
+.student-header .fields ,
+.student-header .actions{
+  background-color: lightblue;
+  padding:2px 2px;
+}
+
+.fields, .actions {
+  padding:0px 2px;
+  
+}
+
+
+/* fixed widths for each column of student Row */
+#student-details .fields:nth-child(1),
+.student-row .fields:nth-child(1) {
+  width: 40px; /* Id */
+}
+
+#student-details .fields:nth-child(2),
+.student-row .fields:nth-child(2) {
+  width: 100px; /* Name */
+}
+
+#student-details .fields:nth-child(3),
+.student-row .fields:nth-child(3) {
+  width: 60px; /* Class */
+}
+
+#student-details .fields:nth-child(4),
+.student-row .fields:nth-child(4) {
+  width: 70px; /* Roll No */
+}
+
+#student-details .fields:nth-child(5),
+.student-row .fields:nth-child(5) {
+  width: 160px; /* Email */
+}
+
+#student-details .fields:nth-child(6),
+.student-row .fields:nth-child(6) {
+  width: 110px; /* Contact */
+}
+
+#student-details .actions,
+.student-row .actions {
+  width: 120px; /* Actions */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Edit Button */
+#student-details .actions button:nth-child(1){
+ border: none;
+  border-radius: 12px;
+  padding: 6px 10px;
+  background-color: rgba(52, 212, 79, 0.8);
+  color: white;
+  font-family: Rowdies;
+  cursor: pointer;
+}
+
+/* Delete Button */
+#student-details .actions button:nth-child(2){
+ border: none;
+  border-radius: 12px;
+  padding: 6px 10px;
+  background-color: rgba(235, 40, 26, 0.8);
+  color: white;
+  font-family: Rowdies;
+  cursor: pointer;
+}
+
+#student-details .actions button:hover{
+    animation-name:wiggle;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+  
+
+/* Animations */
+@keyframes bounce-scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+

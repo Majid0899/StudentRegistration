@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Student Registration" />
+    <meta
+      name="keywords"
+      content="HTML CSS JavaScript React Python Project Web Development Student Registration"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Student Registration System</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <h1 id="title">Student Registration System</h1>
+    </header>
+    <!-- Header End -->
+    <main>
+      <!-- Student Content Section  -->
+      <section id="studentContent">
+        <!-- Student Form Start -->
+        <div id="student-form">
+          <form>
+            <label class="stuLabel" for="stuId">Id</label><br />
+            <input
+              class="studentInput"
+              type="text"
+              name="stuId"
+              id="stuId"
+              placeholder="Enter Student Id"
+              required
+            /><br />
+            <label class="stuLabel" for="stuName">Name</label><br />
+            <input
+              class="studentInput"
+              type="text"
+              name="stuName"
+              id="stuName"
+              placeholder="Enter student name "
+              required
+            /><br />
+            <label class="stuLabel" for="stuClass">Class</label><br />
+            <input
+              class="studentInput"
+              type="text"
+              name="stuClass"
+              id="stuClass"
+              placeholder="Enter student Class "
+              required
+            /><br />
+
+            <label class="stuLabel" for="sturollNo">Roll No</label><br />
+            <input
+              class="studentInput"
+              type="text"
+              name="sturollNo"
+              id="sturollNo"
+              placeholder="Enter Student Roll Number"
+              required
+            /><br />
+            <label class="stuLabel" for="stuEmail">Email</label><br />
+            <input
+              class="studentInput"
+              type="email"
+              name="stuEmail"
+              id="stuEmail"
+              placeholder="Enter Student Email"
+              required
+            /><br />
+            <label class="stuLabel" for="stuContact">Contact No.</label><br />
+            <input
+              class="studentInput"
+              type="text"
+              name="stuContact"
+              id="stuContact"
+              placeholder="Enter Phone Number "
+              required
+            /><br />
+            <button id="submitBtn">Add</button>
+          </form>
+        </div>
+        <!-- Student Form End -->
+         <!-- Student Details Start -->
+        <div id="student-details">
+          <!-- Student Header Start -->
+          <div class="student-header">
+            <div class="fields" id="Id">Id</div>
+            <div class="fields" id="Name">Name</div>
+            <div class="fields" id="class">Class</div>
+            <div class="fields" id="rollnum">Roll No</div>
+            <div class="fields" id="email">Email</div>
+            <div class="fields" id="contact">Contact</div>
+
+            <div class="actions">Actions</div>
+          </div>
+          <!-- Studnet Header End -->
+
+          <!-- Student Data Rows Start -->
+          <div class="student-rows">
+            <!-- Student row -->
+          </div>
+          <!-- Student Data Rows End -->
+
+        </div>
+        <!-- Student Detail Ends -->
+      </section>
+    </main>
+
+    <!-- Script  -->
+    <script src="./index.js"></script>
+  </body>
+</html>
